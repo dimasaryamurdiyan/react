@@ -10,17 +10,15 @@ class Product extends React.Component {
               <div className="card">
                 <div className="card-image">
                     <img src={logo}/>
-                    <br/><br/>
+                    <br/><br/><br/><br/>
                     <span className="card-title blue-grey-text text-lighten-1">{this.props.judul}</span>
-                    <a className="btn-floating halfway-fab waves-effect waves-light red">
-                     <i className="material-icons">add</i>
-                    </a>
+                    
                 </div>
                 <div className="card-content">
                   <p>{this.props.keterangan}</p>
                 </div>
                 <div className="card-action">
-                <a class="waves-effect waves-light red darken-4 btn-small"><i class="material-icons right">restore_from_trash</i>button</a>
+                <a onClick={this.props.HapusCard} className="waves-effect waves-light red darken-4 btn-small"><i className="material-icons right">restore_from_trash</i>Hapus</a>
                 </div>
               </div>
             </div>
